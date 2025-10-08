@@ -1,12 +1,16 @@
-import { Text, View, StyleSheet } from 'react-native';
-import { multiply } from 'react-native-libs';
+import { useEffect } from 'react';
+import { Text, View, StyleSheet} from 'react-native';
+import { setStatusBarColor, setNavigationBarColor } from 'react-native-libs';
 
-const result = multiply(3, 7);
 
 export default function App() {
+  useEffect(()=>{
+    setNavigationBarColor('#FFFFFF', false);
+    setStatusBarColor('#a20d0d', true);
+  },[])
   return (
     <View style={styles.container}>
-      <Text>Result: {result}</Text>
+      <Text>Result: {"result"}</Text>
     </View>
   );
 }

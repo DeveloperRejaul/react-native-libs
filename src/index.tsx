@@ -1,5 +1,9 @@
 import Libs from './NativeLibs';
 
-export function multiply(a: number, b: number): number {
-  return Libs.multiply(a, b);
+export function setStatusBarColor(colorHex: string, darkIcons: boolean) {
+  Libs.setStatusBarColor(colorHex, darkIcons);
+}
+
+export function setNavigationBarColor(colorHex: string, darkIcons: boolean) {
+  Libs.setNavigationBarColor(colorHex, darkIcons);
 }
