@@ -1,10 +1,12 @@
 #import "Libs.h"
 
 @implementation Libs
-- (NSNumber *)multiply:(double)a b:(double)b {
-    NSNumber *result = @(a * b);
+- (void)setStatusBarColor:(NSString *)colorHex darkIcons:(BOOL)darkIcons {
+    // iOS implementation for setting status bar color
+}
 
-    return result;
+- (void)setNavigationBarColor:(NSString *)colorHex darkIcons:(BOOL)darkIcons {
+    // iOS implementation for setting navigation bar color
 }
 
 - (std::shared_ptr<facebook::react::TurboModule>)getTurboModule:
